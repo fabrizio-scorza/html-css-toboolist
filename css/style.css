@@ -10,6 +10,9 @@ ol,
 menu {
 	list-style: none;
 }
+body{
+    font-family: 'Sono', monospace;
+}
 /* intestazione */
 header{
     padding-top: 8px;
@@ -67,12 +70,10 @@ main{
     border-color: rgb(204, 203, 203);
 }
 /* seconda sezione liste */
-/* .triangle{
-    list-style:;
-} */
 h2{
     font-size:18px;
     margin-bottom: 8px;
+    font-weight: 500;
     }
 .box{
     display: inline-block;
@@ -106,4 +107,15 @@ h2{
 }
 li{
     margin-bottom:8px;
+}
+h2:before{
+    content:'\25BE';    
+}
+li.ok:before{
+    content:'\2714';
+    color: rgb(5, 248, 5);
+}
+li.cross::before{
+    content:'\2718';
+    color: red;
 }
