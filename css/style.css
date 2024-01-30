@@ -29,6 +29,7 @@ header{
 /* corpo */
 main{
     background-color: lightgray;
+    min-height:640px;
 }
 .main-div{
     padding:24px;
@@ -80,7 +81,6 @@ h2{
     width: 70px;
     height: 20px;
     border-radius: 15px;
-    background-color: blue;
     color:white;
     text-align: center;
     font-size: 10px;
