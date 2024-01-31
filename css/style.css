@@ -119,17 +119,19 @@ li{
 h2:before{
     content:'\25BE';    
 }
+
+li.ok:before,
+li.cross:before {
+    border: 2px solid currentColor;
+    padding: 2px 4px;
+    border-radius: 50%;
+}
+
 li.ok:before{
     content:'\2714';
     color: rgb(5, 248, 5);
-    border-radius: 50%;
-    border: 2px solid rgb(5, 248, 5);
-    padding: 2px 4px;
 }
-li.cross::before{
+li.cross:before{
     content:'\2718';
     color: red;
-    border-radius: 50%;
-    border: 2px solid red;
-    padding: 2px 4px;
 }
