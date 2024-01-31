@@ -11,12 +11,21 @@ menu {
 	list-style: none;
 }
 body{
+    background-color: lightgray;
     font-family: 'Sono', monospace;
+}
+a{
+    text-decoration: none;
+    color:currentColor;
 }
 /* intestazione */
 header{
-    padding-top: 8px;
-    padding-left:32px;
+    background-color: white;
+    padding-top: 16px 32px;
+}
+.logo{
+    font-size: 40px;
+    font-weight: 700;
 }
 .logo-img{
     vertical-align: middle;
@@ -24,7 +33,6 @@ header{
 }
 .logo-text{
     display: inline-block;
-    font-size: 40px;
 }
 /* corpo */
 main{
@@ -93,7 +101,7 @@ h2{
 .global{
     background-color: rgb(185, 56, 228);
 }
-.recr{
+.recruiting{
     background-color: rgb(38, 166, 3);
 }
 .mobile{
@@ -114,8 +122,14 @@ h2:before{
 li.ok:before{
     content:'\2714';
     color: rgb(5, 248, 5);
+    border-radius: 50%;
+    border: 2px solid rgb(5, 248, 5);
+    padding: 2px 4px;
 }
 li.cross::before{
     content:'\2718';
     color: red;
+    border-radius: 50%;
+    border: 2px solid red;
+    padding: 2px 4px;
 }
